@@ -1,0 +1,244 @@
+@font-face {
+    font-family: Geist;
+    src: url(/assets/fonts/Geist.woff2);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Geist, Arial, sans-serif;
+    min-height: 100dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #F5EFFF;
+}
+
+header {
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 500px;
+    width: 100%;
+    position: sticky;
+    top: .5rem;
+}
+
+nav {
+    padding: .5rem 0;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 0.5rem;
+}
+
+main {
+    flex: 1;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    max-width: 500px;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fff;
+    margin-top: 10rem;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+nav ul *+* {
+    border-left: 2px solid #333;
+    padding-left: 2px;
+}
+
+@media (max-width: 320px) {
+    nav ul {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul *+* {
+        border-left: 0px solid #333;
+        border-top: 2px solid #333;
+        padding-top: 2px;
+        padding-left: 0px;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+}
+
+.landing-page {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #F5EFFF;
+}
+
+.landing-page h1 {
+    font-size: clamp(1.75rem, 10vw, 4rem);
+    font-weight: 700;
+}
+
+.social-media-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.social-media-container>*+* {
+    border-left: 2px solid #333;
+    padding-left: 2px;
+}
+
+.social-media-container>a:hover {
+    background-color: #f0f0f0;
+}
+
+.project-list {
+    scroll-margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #333;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: #fff;
+
+    box-shadow: 10px 10px 0px 0px #A594F9;
+}
+
+.card-image {
+    aspect-ratio: 16 / 9;
+    border-bottom: 3px solid #333;
+    overflow: hidden;
+}
+
+
+
+#bagetaexpress-card .card-image {
+    background-color: #ffff8d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bagetaexpress-card .card-image>img {
+    height: 60%;
+    object-fit: cover;
+}
+
+.card__header {
+
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.card__header-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card__content {
+    padding: 1rem;
+    padding-top: 0;
+    gap: 1rem;
+}
+
+.card__content p {
+    font-weight: 300;
+}
+
+.card__footer {
+    display: flex;
+    padding: 1rem;
+    padding-top: 0;
+    gap: .5rem;
+}
+
+.project-section-title {
+    font-size: 1.5rem;
+    margin-top: .75rem;
+}
+
+.btn {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 1em;
+    border: 1px solid #333;
+    border-radius: 0.4rem;
+    text-decoration: none;
+    color: #333;
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+}
+
+.btn--flex {
+    flex: 1;
+}
+
+.btn__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    padding: 0.5em;
+}
+
+.link__inline {
+    text-decoration: underline;
+    color: #0000dc;
+}
+
+#about-me {
+    scroll-margin-top: 10rem;
+    overflow: clip;
+    margin-top: 10rem;
+}
+
+#experience {
+    scroll-margin-top: 10rem;
+    overflow: clip;
+    margin-top: 10rem;
+}
+
+#experience .card__content li li {
+    font-weight: 300;
+    list-style-type: disc;
+    margin-left: 1.75rem;
+}
+
+#experience .skills-list>li {
+    font-weight: 500;
+}
