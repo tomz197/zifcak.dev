@@ -3,20 +3,54 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tomáš Žifčák</title>
-  <meta name="description"
-    content="Tomáš Žifčák's personal website / portfolio. Here you can find project, skills, work history, contact informations and more." />
-  <meta name="author" content="Tomáš Žifčák - personal website / portfolio" />
-  <meta name="keywords" content="Zifcak, Žifčák, personal, website, osobná, stránka, portfolio" />
-  <meta name="robots" content="index, follow" />
-  <meta name="og:title" content="Tomáš Žifčák" />
-  <meta name="og:description"
-    content="Tomáš Žifčák's personal website / portfolio. Here you can find project, skills, work history, contact informations and more." />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-  <link rel="manifest" href="/assets/site.webmanifest">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="language" content="English" />
+  <meta name="generator" content="HTML5" />
+  <meta name="application-name" content="Tomáš Žifčák's Portfolio" />
+  <title>Tomáš Žifčák | Full Stack Developer & Portfolio</title>
+  <meta name="description" content="Full Stack Developer with 3+ years of experience in full stack and mobile development. Explore my portfolio of full stack web application and tools written in React, Python, Go and more." />
+  <meta name="author" content="Tomáš Žifčák" />
+  <meta name="keywords" content="Tomáš Žifčák, Zifcak, Žifčák, Full Stack Developer, Web Developer, React Developer, React Native Developer, Portfolio, Personal Website, Software Engineer, Frontend Developer, Backend Developer, Mobile Developer" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1, notranslate" />
+  
+  <!-- Performance optimizations -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://www.google-analytics.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://zifcak.dev" />
+  
+  <!-- Language alternates -->
+  <link rel="alternate" hreflang="en" href="https://zifcak.dev" />
+  <link rel="alternate" hreflang="x-default" href="https://zifcak.dev" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://zifcak.dev" />
+  <meta property="og:title" content="Tomáš Žifčák | Full Stack Developer & Portfolio" />
+  <meta property="og:description" content="Tomáš Žifčák's personal website and portfolio showcasing web development projects, full-stack development skills and more. Explore my work experience, projects, and technical expertise." />
+  <meta property="og:image" content="https://zifcak.dev/assets/og-image.png" />
+  <meta property="og:site_name" content="Tomáš Žifčák's Portfolio" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://zifcak.dev" />
+  <meta name="twitter:title" content="Tomáš Žifčák | Full Stack Developer & Portfolio" />
+  <meta name="twitter:description" content="Tomáš Žifčák's personal website and portfolio showcasing web development projects, full-stack development skills and more." />
+  <meta name="twitter:image" content="https://zifcak.dev/assets/og-image.png" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="zifcak.dev" />
+  <link rel="manifest" href="assets/site.webmanifest" />
+  
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="tailwind-preset.css">
   <link rel="stylesheet" href="main.css">
 
@@ -26,59 +60,86 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-RYYQ14DPX2');
   </script>
 
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Tomáš Žifčák",
+      "url": "https://zifcak.dev",
+      "jobTitle": "Full Stack Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "CORA GEO"
+      },
+      "sameAs": [
+        "https://github.com/tomz197/",
+        "https://www.linkedin.com/in/tomaszifcak/",
+        "https://www.instagram.com/tom_z__/"
+      ],
+      "knowsAbout": [
+        "Web Development",
+        "Mobile Development",
+        "React",
+        "React Native",
+        "JavaScript",
+        "TypeScript",
+        "Node.js",
+        "C#",
+        "SQL",
+        "Go"
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Tomáš Žifčák's Portfolio",
+      "url": "https://zifcak.dev",
+      "description": "Full Stack Developer with 3+ years of experience in full stack and mobile development. Explore my portfolio of full stack web application and tools written in React, Python, Go and more.",
+      "author": {
+        "@type": "Person",
+        "name": "Tomáš Žifčák"
+      }
+    }
+  </script>
 </head>
 
 <body>
-  <header>
-    <nav>
+  <header role="banner">
+    <nav role="navigation" aria-label="Main navigation">
       <ul>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about-me">About me</a></li>
-        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects" aria-label="View projects section">Projects</a></li>
+        <li><a href="#about-me" aria-label="View about me section">About me</a></li>
+        <li><a href="#experience" aria-label="View experience section">Experience</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-    <div class="landing-page">
-      <h1>Tomáš Žifčák</h1>
+
+  <main id="main-content" role="main" class="animate-fade-in">
+    <section class="landing-page animate-fade-in" aria-labelledby="hero-title">
+      <h1 id="hero-title">Tomáš Žifčák</h1>
       <h2>some of my projects, fun ideas and little bit about me</h2>
-      <div class="social-media-container">
-        <a class="btn__icon" href="https://github.com/tomz197/" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="lucide lucide-github">
-            <path
-              d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-            <path d="M9 18c-4.51 2-5-2-7-2" />
-          </svg>
+      <div class="social-media-container" role="navigation" aria-label="Social media links">
+        <a class="btn__icon" href="https://github.com/tomz197/" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">
+          <img src="assets/icons/github.svg" alt="" width="24" height="24" aria-hidden="true" />
         </a>
-        <a class="btn__icon" href="https://www.instagram.com/tom_z__/" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="lucide lucide-instagram">
-            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-          </svg>
+        <a class="btn__icon" href="https://www.instagram.com/tom_z__/" target="_blank" rel="noopener noreferrer" aria-label="Visit my Instagram profile">
+          <img src="assets/icons/instagram.svg" alt="" width="24" height="24" aria-hidden="true" />
         </a>
-        <a class="btn__icon" href="https://www.linkedin.com/in/tomaszifcak/" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="lucide lucide-linkedin">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-            <rect width="4" height="12" x="2" y="9" />
-            <circle cx="4" cy="4" r="2" />
-          </svg>
+        <a class="btn__icon" href="https://www.linkedin.com/in/tomaszifcak/" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">
+          <img src="assets/icons/linkedin.svg" alt="" width="24" height="24" aria-hidden="true" />
         </a>
       </div>
-    </div>
-    <div class="project-list" id="projects">
-      <h3 class="project-section-title">Main project</h3>
-      <div class="card" id="bagetaexpress-card">
+    </section>
+
+    <section class="project-list" id="projects" aria-labelledby="projects-title">
+      <h3 id="projects-title" class="project-section-title animate-fade-in">Main project</h3>
+      <div class="card animate-slide-in" id="bagetaexpress-card">
         <div class="card-image">
           <img loading="lazy" src="assets/images/bagetaExpress_brandmark.svg" alt="Bageta Express logo" />
         </div>
@@ -87,34 +148,47 @@
         </div>
         <div class="card__content">
           <p>
-            Bageta Express is a web application for ordering food for school. It is a project I have been working on
-            for a while. It's actively being used by a local restaurant and school in my hometown.
+            Bageta Express is a full-stack web application that streamlines school lunch ordering.
+            Students can easily browse menus, place orders, and make payments online.
+            Built with NextJS, it's currently serving users at a local school and restaurant.
+            The system handles order management and reporting while maintaining high reliability.
           </p>
         </div>
         <div class="card__footer">
-          <a class="btn btn--flex" target="_blank" href="https://bageta.express">go to website</a>
-          <a class="btn btn__icon" target="_blank" href="https://github.com/bagetaexpress/bagetaexpress">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="lucide lucide-github">
-              <path
-                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-              <path d="M9 18c-4.51 2-5-2-7-2" />
-            </svg>
+          <a class="btn btn--flex" target="_blank" href="https://bageta.express" rel="noopener noreferrer">go to website</a>
+          <a class="btn btn__icon" target="_blank" href="https://github.com/bagetaexpress/bagetaexpress" rel="noopener noreferrer" aria-label="View Bageta Express on GitHub">
+            <img src="assets/icons/github.svg" alt="" width="24" height="24" aria-hidden="true" />
           </a>
-          <a class="btn btn__icon" target="_blank" href="https://instagram.com/bagetaexpress">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="lucide lucide-instagram">
-              <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-            </svg>
+          <a class="btn btn__icon" target="_blank" href="https://instagram.com/bagetaexpress" rel="noopener noreferrer" aria-label="View Bageta Express on Instagram">
+            <img src="assets/icons/instagram.svg" alt="" width="24" height="24" aria-hidden="true" />
           </a>
         </div>
       </div>
-      <h3 class="project-section-title">Side projects</h3>
-      <div class="card">
+      <div class="card animate-slide-in" id="courserec-card">
+        <div class="card-image">
+          <img loading="lazy" src="assets/images/course-rec.svg" alt="Course recommender logo" />
+        </div>
+        <div class="card__header">
+          <h4 class="card__header-title">Course recommender</h4>
+        </div>
+        <div class="card__content">
+          <p>
+            Recommendation system created as university group project.
+            Users select courses they like and get recommendations based on their choices.
+            The system uses content-based filtering to provide personalized recommendations.
+            Built with Python backend, and React frontend.
+          </p>
+        </div>
+        <div class="card__footer">
+          <a class="btn btn--flex" target="_blank" href="https://muni.courses">go to website</a>
+          <a class="btn btn__icon" target="_blank" href="https://github.com/tomz197/pv254-project">
+            <img src="assets/icons/github.svg" alt="GitHub" width="24" height="24" />
+          </a>
+        </div>
+      </div>
+      
+      <h3 class="project-section-title animate-fade-in">Side projects</h3>
+      <div class="card animate-slide-in">
         <div class="card-image">
           <img loading="lazy" src="assets/images/os-quiz.png" alt="screenshot from OS-quiz website" />
         </div>
@@ -123,25 +197,41 @@
         </div>
         <div class="card__content">
           <p>
-            It's a simple web application for testing your knowledge of operating systems. It's a project I
+            Web application for testing your knowledge of operating systems. It's a project I
             created in due to lack of practise tests for operating systems at my university.
+            With <bold>400+ users overall</bold> and <bold>around 100 weekly active users</bold>, it's a pretty popular project.
           </p>
         </div>
         <div class="card__footer">
           <a class="btn btn--flex" target="_blank" href="https://os.zifcak.dev">go to website</a>
           <a class="btn btn__icon" target="_blank" href="https://github.com/tomz197/os-drill">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="lucide lucide-github">
-              <path
-                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-              <path d="M9 18c-4.51 2-5-2-7-2" />
-            </svg>
+            <img src="assets/icons/github.svg" alt="GitHub" width="24" height="24" />
           </a>
         </div>
       </div>
-      <h3 class="project-section-title">Fun ideas</h3>
-      <div class="card">
+      <div class="card animate-slide-in">
+        <div class="card-image">
+          <img loading="lazy" src="assets/images/mongo-analyze.png" alt="MongoDB Analyze screenshot" />
+        </div>
+        <div class="card__header">
+          <h4 class="card__header-title">MongoDB Analyze</h4>
+        </div>
+        <div class="card__content">
+          <p>
+            Tool to analyze MongoDB collections written in Go. It scans the entire collection, detects data types for each field,
+            and counts their occurrences. Results are displayed in a tabular format or as JSON.
+            Useful for spotting inconsistencies and understanding your data structure.
+          </p>
+        </div>
+        <div class="card__footer">
+          <a class="btn btn--flex" target="_blank" href="https://github.com/tomz197/mongodb-analyze">go to website</a>
+          <a class="btn btn__icon" target="_blank" href="https://github.com/tomz197/mongodb-analyze">
+            <img src="assets/icons/github.svg" alt="GitHub" width="24" height="24" />
+          </a>
+        </div>
+      </div>
+      <h3 class="project-section-title animate-fade-in">Fun ideas</h3>
+      <div class="card animate-slide-in">
         <div class="card-image">
           <img loading="lazy" src="assets/images/docs.png" alt="screenshot from document" />
         </div>
@@ -157,17 +247,11 @@
         <div class="card__footer">
           <a class="btn btn--flex" target="_blank" href="https://github.com/tomz197/docs">go to website</a>
           <a class="btn btn__icon" target="_blank" href="https://github.com/tomz197/docs">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="lucide lucide-github">
-              <path
-                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-              <path d="M9 18c-4.51 2-5-2-7-2" />
-            </svg>
+            <img src="assets/icons/github.svg" alt="GitHub" width="24" height="24" />
           </a>
         </div>
       </div>
-      <div class="card">
+      <div class="card animate-slide-in">
         <div class="card-image">
           <img loading="lazy" src="assets/images/window-tracking.png" alt="screenshot from document" />
         </div>
@@ -183,101 +267,108 @@
         <div class="card__footer">
           <a class="btn btn--flex" target="_blank" href="https://funstuff.zifcak.dev/multiwindowTracking/index.html">go to website</a>
           <a class="btn btn__icon" target="_blank" href="https://github.com/tomz197/funstuff">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="lucide lucide-github">
-              <path
-                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-              <path d="M9 18c-4.51 2-5-2-7-2" />
-            </svg>
+            <img src="assets/icons/github.svg" alt="GitHub" width="24" height="24" />
           </a>
         </div>
       </div>
-      <div class="card">
-        <div class="card-image">
-          <img loading="lazy" src="assets/images/svgLines.png" alt="screenshot of drawen lines" />
-        </div>
-        <div class="card__header">
-          <h4 class="card__header-title">Svg lines</h4>
-        </div>
-        <div class="card__content">
-          <p>
-            Create dots, create lines between them and move them around. Simple thing written in plain JS.
-          </p>
-        </div>
-        <div class="card__footer">
-          <a class="btn btn--flex" target="_blank" href="https://funstuff.zifcak.dev/svgLines/index.html">go to website</a>
-          <a class="btn btn__icon" target="_blank" href="https://github.com/tomz197/funstuff">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="lucide lucide-github">
-              <path
-                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-              <path d="M9 18c-4.51 2-5-2-7-2" />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
 
-    <div class="card" id="about-me">
+      <button id="showMoreBtn" class="btn btn--flex" onclick="toggleMoreProjects()">Show more</button>
+      
+      <div id="moreProjects" style="display: none;">
+        <div class="card animate-slide-in">
+          <div class="card-image">
+            <img loading="lazy" src="assets/images/svgLines.png" alt="screenshot of drawen lines" />
+          </div>
+          <div class="card__header">
+            <h4 class="card__header-title">Svg lines</h4>
+          </div>
+          <div class="card__content">
+            <p>
+              Create dots, create lines between them and move them around. Simple thing written in plain JS.
+            </p>
+          </div>
+          <div class="card__footer">
+            <a class="btn btn--flex" target="_blank" href="https://funstuff.zifcak.dev/svgLines/index.html">go to website</a>
+            <a class="btn btn__icon" target="_blank" href="https://github.com/tomz197/funstuff">
+              <img src="assets/icons/github.svg" alt="GitHub" width="24" height="24" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card animate-slide-in" id="about-me" aria-labelledby="about-title">
       <div class="card__header">
-        <h4 class="card__header-title">About me</h4>
+        <h4 id="about-title" class="card__header-title">About me</h4>
       </div>
       <div class="card__content">
         <p>I have been programming since 2019, at first, I wanted to make games(as many of us do) but that was too hard,
           so after a while, in 2020, I landed in web development. After 2 years I landed my first job as a frontend
-          developer and I've been slowly moving towards backed. Currently, I'm studying at <a href="https://fi.muni.cz"
-            target="_blank" class="link__inline">FI MUNI</a>, exploring
+          developer and I've been slowly moving towards backed. Currently, I'm studying at <a href="https://fi.muni.cz"
+            target="_blank" rel="noopener noreferrer" class="link__inline">FI MUNI</a>, exploring
           programming in general.
         </p>
       </div>
-      <div class="card__footer">
-      </div>
-    </div>
+    </section>
 
-    <div class="card" id="experience">
+    <section class="card animate-slide-in" id="experience" aria-labelledby="experience-title">
       <div class="card__header">
-        <h4 class="card__header-title">Experience</h4>
+        <h4 id="experience-title" class="card__header-title">Experience</h4>
       </div>
       <div class="card__content">
         <ul class="skills-list">
-          <li>Fronend
+          <li>Frontend
             <ul>
-              <li>2+ years of profesional experience</li>
+              <li>3+ years of professional experience</li>
               <li>JS, TS, React</li>
             </ul>
           </li>
           <li>Mobile development
             <ul>
-              <li>2+ years of profesional experience</li>
-              <li>JS, TS, React Native, ios, android</li>
+              <li>3+ years of professional experience</li>
+              <li>JS, TS, React Native, iOS, Android</li>
             </ul>
           </li>
           <li>Backend
             <ul>
-              <li>1+ years of profesional experience</li>
+              <li>2+ years of professional experience</li>
               <li>JS, TS, C#, SQL, NextJS, NodeJS, Database design</li>
             </ul>
           </li>
           <li>Other
             <ul>
-              <li>UI/UX - designing and iterating over mobile and web aplications</li>
-              <li>Go - currently learning</li>
+              <li>Go - backend and tools</li>
+              <li>UI/UX - designing and iterating over mobile and web applications</li>
+              <li>Recommendation systems - experience from university(group project)</li>
+              <li>Machine learning - experience from university</li>
               <li>C, Haskell, Python - experience from university</li>
             </ul>
           </li>
         </ul>
       </div>
-      <div class="card__footer">
-      </div>
-    </div>
+    </section>
   </main>
-  <footer>
-    <a class="btn" href="https://github.com/tomz197/" target="_blank">GitHub</a>
-    <a class="btn" href="https://www.instagram.com/tom_z__/" target="_blank">Instagram</a>
-    <a class="btn" href="https://www.linkedin.com/in/tomaszifcak/" target="_blank">LinkedIn</a>
+
+  <footer role="contentinfo">
+    <a class="btn" href="https://github.com/tomz197/" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">GitHub</a>
+    <a class="btn" href="https://www.instagram.com/tom_z__/" target="_blank" rel="noopener noreferrer" aria-label="Visit my Instagram profile">Instagram</a>
+    <a class="btn" href="https://www.linkedin.com/in/tomaszifcak/" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">LinkedIn</a>
   </footer>
+
+  <script>
+  function toggleMoreProjects() {
+    const moreProjects = document.getElementById('moreProjects');
+    const showMoreBtn = document.getElementById('showMoreBtn');
+    
+    if (moreProjects.style.display === 'none') {
+      moreProjects.style.display = 'block';
+      showMoreBtn.textContent = 'Show less';
+    } else {
+      moreProjects.style.display = 'none';
+      showMoreBtn.textContent = 'Show more';
+    }
+  }
+  </script>
 </body>
 
 </html>
