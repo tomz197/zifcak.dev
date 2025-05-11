@@ -25,6 +25,7 @@ header {
     width: 100%;
     position: sticky;
     top: .5rem;
+    z-index: 100;
 }
 
 nav {
