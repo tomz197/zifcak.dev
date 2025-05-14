@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /index.html
+
+# Sitemap location
+Sitemap: https://zifcak.dev/sitemap.xml
+
+# Crawl-delay for all bots
+Crawl-delay: 10 
