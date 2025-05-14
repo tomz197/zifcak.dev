@@ -99,13 +99,36 @@ nav ul *+* {
     font-weight: 700;
 }
 
-.social-media-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hero-container > * {
     background-color: #fff;
     border: 2px solid #333;
     border-radius: 0.5rem;
     overflow: hidden;
+}
+
+.social-media-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.download-cv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    padding: 0.5em 1em;
+    gap: 0.5rem;
+}
+
+.download-cv:hover {
+    background-color: #f0f0f0;
 }
 
 .social-media-container>*+* {
@@ -241,6 +264,10 @@ nav ul *+* {
     border: 2px solid #333;
     border-radius: 0.5rem;
     padding: 0.5em 1em;
+}
+
+#showMoreBtn:hover {
+    background-color: #f0f0f0;
 }
 
 #about-me {
